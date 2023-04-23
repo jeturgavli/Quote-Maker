@@ -9,7 +9,12 @@ def main():
     template = input("Chose Background : ")
     templateBg = Image.open(f'Background/{template}.jpg')
 
-    font_object =  ImageFont.truetype('Fonts/ArialCE.ttf', 35 )
+    # ----- Fonts Library------
+    print("Arial[0] , Roboto-Medium[1], LuckiestGuy[2]")
+    Fonts = ['Arial', 'Roboto', 'LuckiestGuy']
+    add_number = int(input("Enter Number Do you want to use : "))
+    font = Fonts[add_number]
+    font_object =  ImageFont.truetype(f'Fonts/{font}.ttf', 35 )
 
     drawing_object = ImageDraw.Draw(templateBg)
 
