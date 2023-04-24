@@ -11,10 +11,11 @@ def main():
 
     # ----- Fonts Library------
     print("Arial[0] , Roboto-Medium[1], LuckiestGuy[2]")
-    Fonts = ['Arial', 'Roboto', 'LuckiestGuy']
+    Fonts_name = ['Arial', 'Roboto', 'LuckiestGuy']
     add_number = int(input("Enter Number Do you want to use : "))
-    font = Fonts[add_number]
-    font_object =  ImageFont.truetype(f'Fonts/{font}.ttf', 35 )
+    font = Fonts_name[add_number]
+    fonts = font
+    font_object =  ImageFont.truetype(f'Fonts/{fonts}.ttf', 35 )
 
     drawing_object = ImageDraw.Draw(templateBg)
 
